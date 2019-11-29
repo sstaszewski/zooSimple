@@ -1,3 +1,3 @@
 public interface Cleaning {
-    String cleaning();
+    boolean cleaning();
 }

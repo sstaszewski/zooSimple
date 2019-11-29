@@ -13,9 +13,10 @@ public class Guest extends People implements BuyTicket, MakeMess, TakingATour {
         return fullTicket;
     }
 
+    //zesralo sie
     @Override
-    public String makingMess() {
-        return "Zrobiłem rozpierdol.";
+    public boolean makingMess() {
+        return cage1.setIsClean = false;
     }
 
     @Override

@@ -2,9 +2,11 @@ public class Worker extends People implements Cleaning, FeedingAnimals, SellTick
     private String occupation;
     private double salary;
 
+
+    //do zrobienia
     @Override
-    public String cleaning() {
-        return "Cage is clean now.";
+    public boolean cleaning() {
+        return cage1.setClean = true;
     }
 
     @Override

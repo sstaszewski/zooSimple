@@ -1,7 +1,7 @@
 public class ZooRunning {
     public static void main(String[] args) {
 
-
+        Cage cage1 = new Cage(true, 13);
         Worker cleaner1 = new Worker("Kowalski Jan", 34, "Sprzątacz", 2500);
         Guest guest1 = new Guest("Nowak Jan", 35, 400);
         Worker feeder1 = new Worker("Dolas Franek", 23, "Dokarmiacz", 2000);
