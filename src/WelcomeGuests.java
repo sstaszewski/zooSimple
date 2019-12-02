@@ -1,3 +1,3 @@
 public interface WelcomeGuests {
-    String welcomingGuests();
+    String welcomingGuests(Guest guest);
 }

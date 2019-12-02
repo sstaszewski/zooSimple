@@ -1,3 +1,3 @@
 public interface FeedingAnimals {
-    String feeding();
+    String feeding(Animal animal);
 }

@@ -1,15 +1,28 @@
 public class Ticket {
-    private double fullTicketPrice = 100;
+    private double ticketPrice;
     private double discount = 0.5;
 
-
-    //cos tu nie gra
     public double addDiscount() {
-        return fullTicketPrice * discount;
+        return discount;
     }
 
+    public double getTicketPrice() {
+        return ticketPrice;
+    }
 
-    public double getFullTicketPrice() {
-        return fullTicketPrice;
+    public Ticket(double ticketPrice) {
+        this.ticketPrice = ticketPrice;
+    }
+
+    public void setTicketPrice(double ticketPrice) {
+        this.ticketPrice = ticketPrice;
+    }
+
+    public double getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(double discount) {
+        this.discount = discount;
     }
 }

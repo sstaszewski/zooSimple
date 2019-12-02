@@ -7,16 +7,15 @@ public class Guest extends People implements BuyTicket, MakeMess, TakingATour {
         this.setAge(age);
     }
 
+    //do zrobienia
     @Override
-    public Ticket buyTicket() {
-        Ticket fullTicket = new Ticket();
-        return fullTicket;
+    public Ticket buyTicket(Ticket ticket) {
+        return ticket;
     }
 
-    //zesralo sie
     @Override
-    public boolean makingMess() {
-        return cage1.setIsClean = false;
+    public void makingMess(Cage cage) {
+        cage.setIsClean(false);
     }
 
     @Override
@@ -28,7 +27,7 @@ public class Guest extends People implements BuyTicket, MakeMess, TakingATour {
         return wallet;
     }
 
-    public void setWallet(double wallet) {
-        this.wallet = wallet;
+    public double setWallet(double wallet) {
+        return this.wallet = wallet;
     }
 }

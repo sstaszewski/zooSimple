@@ -1,3 +1,3 @@
 public interface MakeMess {
-    boolean makingMess();
+    void makingMess(Cage cage);
 }

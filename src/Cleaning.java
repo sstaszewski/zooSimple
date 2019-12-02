@@ -1,3 +1,3 @@
 public interface Cleaning {
-    boolean cleaning();
+    void cleaning(Cage cage);
 }

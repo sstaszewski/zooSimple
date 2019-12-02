@@ -8,11 +8,11 @@ public class Cage {
         this.cageNumber = cageNumber;
     }
 
-    public boolean isClean() {
+    public boolean getisClean() {
         return isClean;
     }
 
-    public void setClean(boolean clean) {
+    public void setIsClean(boolean clean) {
         isClean = clean;
     }
 
@@ -23,4 +23,5 @@ public class Cage {
     public void setCageNumber(int cageNumber) {
         this.cageNumber = cageNumber;
     }
+
 }

@@ -1,4 +1,4 @@
-public interface SellTickets {
-    double sellFullPriceTicket();
-    double sellHalfPriceTicket();
-}
+//public interface SellTickets {
+//    double sellFullPriceTicket();
+//    double sellHalfPriceTicket();
+//}

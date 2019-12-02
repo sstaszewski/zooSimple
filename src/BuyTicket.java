@@ -1,3 +1,3 @@
 public interface BuyTicket {
-    Ticket buyTicket();
+    Ticket buyTicket(Ticket ticket);
 }
