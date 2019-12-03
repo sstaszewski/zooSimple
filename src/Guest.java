@@ -1,4 +1,4 @@
-public class Guest extends People implements BuyTicket, MakeMess, TakingATour {
+public class Guest extends People implements MakeMess, TakingATour {
     private double wallet;
 
     public Guest(String name, int age, double wallet) {
@@ -8,8 +8,12 @@ public class Guest extends People implements BuyTicket, MakeMess, TakingATour {
     }
 
     //do zrobienia
-    @Override
-    public Ticket buyTicket(Ticket ticket) {
+    //    @Override
+    public Ticket buyTicket(Seller seller, Ticket ticket) {
+        if (getAge() < 18) {
+            seller.sellHalfPriceTicket(ticket);
+        }
+        seller.sellFullPriceTicket(ticket);
         return ticket;
     }
 

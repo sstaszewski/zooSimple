@@ -1,4 +1,4 @@
-public class Seller extends Worker implements WelcomeGuests{
+public class Seller extends Worker implements WelcomeGuests {
 
 
     @Override
@@ -8,16 +8,17 @@ public class Seller extends Worker implements WelcomeGuests{
 
     // NAREPEROWAC!
     //    @Override
-    public double sellFullPriceTicket(Guest guest, Ticket ticket) {
-        welcomingGuests(guest);
-        return guest.setWallet(guest.getWallet() - ticket.getTicketPrice());
+    public Ticket sellFullPriceTicket(Ticket ticket) {
+        return ticket;
+        //        return guest.setWallet(guest.getWallet() - ticket.getTicketPrice());
     }
 
     //    @Override
-    public double sellHalfPriceTicket(Guest guest, Ticket ticket) {
-        welcomingGuests(guest);
-        return guest.setWallet(guest.getWallet() - ticket.getTicketPrice()*ticket.addDiscount());
+    public Ticket sellHalfPriceTicket(Ticket ticket) {
+        return ticket;
+        //        return guest.setWallet(guest.getWallet() - ticket.getTicketPrice()*ticket.addDiscount());
     }
+
     public Seller(String name, int age, String occupation, double salary) {
         super(name, age, occupation, salary);
     }

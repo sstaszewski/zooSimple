@@ -17,8 +17,7 @@ public class ZooRunning {
         cleaner1.cleaning(cage1);
         guest1.makingMess(cage1);
         seller1.welcomingGuests(guest1);
-        seller1.sellFullPriceTicket(guest1, ticket);
-        seller1.sellHalfPriceTicket(guest1, ticket);
+        guest1.buyTicket(seller1, ticket);
         monkey.isHungry(monkey);
         feeder1.feeding(monkey);
         guest1.touring();
